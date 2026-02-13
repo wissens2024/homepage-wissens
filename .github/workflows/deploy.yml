@@ -44,6 +44,7 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: 2255
           script: |
             cd /var/services/homes/juchul/homepage-wissens
             rm -rf dist
@@ -56,6 +57,7 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: 2255
           source: "build/*"
           target: "/var/services/homes/juchul/homepage-wissens/dist/"
           strip_components: 1
@@ -67,6 +69,7 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: 2255
           script: |
             sudo synoservicectl --restart nginx
             echo "✅ Deployment completed successfully!"
