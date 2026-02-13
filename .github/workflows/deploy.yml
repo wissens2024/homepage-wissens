@@ -71,7 +71,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           port: 2255
           script: |
-            sudo synoservicectl --restart nginx
+            sudo nginx -s reload
             echo "✅ Deployment completed successfully!"
 
   # 선택사항: PR에 대한 빌드 테스트
