@@ -74,7 +74,7 @@ jobs:
             ls -la /var/services/homes/juchul/homepage-wissens/dist/
             echo "✅ Deployment completed successfully!"
 
-  # 선택사항: PR에 대한 빌드 테스트
+  # 선택사항: PR에 대한 빌드 테스트 
   test-build:
     runs-on: ubuntu-latest
     
