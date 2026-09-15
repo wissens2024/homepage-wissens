@@ -30,9 +30,9 @@ export function ContactCTA({ theme, onNavigate, fullPage = false, language = "ko
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // EmailJS 설정
-  const EMAILJS_SERVICE_ID = "service_kckdndf";
-  const EMAILJS_TEMPLATE_ID = "template_s7wldqk";
-  const EMAILJS_PUBLIC_KEY = "VmuLBHm7_BYq9AwkM";
+  const EMAILJS_SERVICE_ID = "service_uo01sgn";
+  const EMAILJS_TEMPLATE_ID = "template_1ugrjd9";
+  const EMAILJS_PUBLIC_KEY = "AYcTqV5caIPzLDXGj";
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -46,7 +46,12 @@ export function ContactCTA({ theme, onNavigate, fullPage = false, language = "ko
         company: formData.company || "미입력",
         phone: formData.phone || "미입력",
         message: formData.message,
-        reply_to: formData.email
+        reply_to: formData.email,
+        // EmailJS 기본 "Contact Us" 템플릿 변수명 호환
+        name: formData.name,
+        email: formData.email,
+        title: `${formData.name} 님의 홈페이지 문의`,
+        time: new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" })
       };
 
       const response = await emailjs.send(
