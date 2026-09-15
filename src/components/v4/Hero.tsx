@@ -67,7 +67,7 @@ export function Hero({ theme, onNavigate, language = "ko" }: HeroProps) {
               </span>
             </div>
 
-            <h1 className={`text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight ${
+            <h1 className={`hero-title text-5xl md:text-6xl mb-6 leading-tight ${
               theme === "dark" ? "text-white" : "text-gray-900"
             }`}>
               {t.hero.title}

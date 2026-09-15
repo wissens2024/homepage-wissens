@@ -37,7 +37,7 @@ export function Overview({ theme, language }: OverviewProps) {
           }`}>
             {t.overview.mission}
           </h2>
-          <p className={`text-xl max-w-3xl mx-auto ${
+          <p className={`text-xl max-w-4xl mx-auto ${
             theme === "dark" ? "text-gray-400" : "text-gray-600"
           }`}>
             {t.overview.description}

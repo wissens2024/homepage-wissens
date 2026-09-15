@@ -42,9 +42,15 @@ export function Footer({ theme, onNavigate, language = "ko" }: FooterProps) {
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              {language === "ko" 
-                ? "AI 기술로 비즈니스 혁신을 선도하는 종합 AI 솔루션 전문 기업" 
-                : "Comprehensive AI solution company leading business innovation with AI technology"}
+              {language === "ko" ? (
+                <>
+                  AI 기술로 비즈니스 혁신을 선도하는
+                  <br />
+                  AI 솔루션 전문 기업
+                </>
+              ) : (
+                "Comprehensive AI solution company leading business innovation with AI technology"
+              )}
             </p>
           </div>
 

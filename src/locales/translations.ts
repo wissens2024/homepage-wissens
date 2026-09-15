@@ -20,7 +20,7 @@ export const translations = {
     overview: {
       title: "회사 소개",
       description:
-        "비센스바움은 AI기반 교육/평가 솔루션, 보안 시스템, 맞춤형 LLM 구축을 제공하는 전문 AI 기업입니다.",
+        "비센스바움은 AI기반 교육/평가 솔루션, 보안 시스템, 맞춤형 LLM 구축을 제공하는 전문 AI 기업입니다.",
       mission: "우리의 미션",
       missionText:
         "최첨단 AI로 기업과 교육 기관의 디지털 전환을 실현합니다",
