@@ -61,7 +61,7 @@ export default function App() {
               <div className="container mx-auto max-w-7xl">
                 <h1 className={`text-5xl mb-8 ${
                   theme === "dark" ? "text-white" : "text-gray-900"
-                }`}>{language === "ko" ? "핵심 ��술" : "Core Technology"}</h1>
+                }`}>{language === "ko" ? "핵심 솔루션" : "Core Technology"}</h1>
                 <TechnologyShowcase theme={theme} language={language} />
                 <div className="mt-16">
                   <TrustIndicators theme={theme} language={language} />
